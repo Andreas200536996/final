@@ -28,7 +28,7 @@ myImmutableArray.splice(1, 1);
 
 // Step 6: Using array filter, iterate over the array items and remove all items beginning with the letter "J". Store the result in a new, block scoped, mutable variable
 let newArr = [];
-newArr = names.filter(function (item) {
+newArr = myImmutableArray.filter(function (item) {
     return item.charAt(0) === "J";
 });
 
@@ -40,7 +40,8 @@ const parent = document.querySelector('#main-header');
 const buttons = parent.querySelectorAll('button');
 
 function handleButtonClick() {
-    alert("Call me now at 555-555-5555");
+    alert("Call me now at 555-555-5555!");
+    console.log("hi")
 }
 
 buttons.forEach(button => button.addEventListener('click', handleButtonClick));
